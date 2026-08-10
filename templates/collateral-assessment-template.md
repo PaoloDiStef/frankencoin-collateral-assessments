@@ -10,7 +10,7 @@
     "coingecko": "",
     "website": "",
     "docs": "",
-    "other": "",
+    "other": ""
   },
   "risk_scores": {
     "public_information": "",
