@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frankencoin Collateral Risk Assessment",
+  "type": "object",
+  "required": [
+    "asset_name",
+    "asset_ticker",
+    "contract_address",
+    "assessment_date",
+    "author",
+    "links",
+    "risk_scores",
+    "risk_parameters"
+  ],
+  "properties": {
+    "asset_name": {
+      "type": "string"
+    },
+    "asset_ticker": {
+      "type": "string"
+    },
+    "contract_address": {
+      "type": "string"
+    },
+    "assessment_date": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "links": {
+      "type": "object",
+      "required": [
+        "etherscan",
+        "coingecko",
+        "website",
+        "docs",
+        "other"
+      ],
+      "properties": {
+        "etherscan": {
+          "type": "string"
+        },
+        "coingecko": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "docs": {
+          "type": "string"
+        },
+        "other": {
+          "type": "string"
+        }
+      }
+    },
+    "risk_scores": {
+      "type": "object",
+      "required": [
+        "public_information",
+        "free_float",
+        "market_risk",
+        "tail_risks"
+      ],
+      "properties": {
+        "public_information": {
+          "type": "string"
+        },
+        "free_float": {
+          "type": "string"
+        },
+        "market_risk": {
+          "type": "string"
+        },
+        "tail_risks": {
+          "type": "object",
+          "required": [
+            "counterparty_risks",
+            "smart_contract_risks",
+            "governance_risks",
+            "legal_risks",
+            "liquidity_risks",
+            "contagion_risks"
+          ],
+          "properties": {
+            "counterparty_risks": {
+              "$ref": "#/$defs/riskArray"
+            },
+            "smart_contract_risks": {
+              "$ref": "#/$defs/riskArray"
+            },
+            "governance_risks": {
+              "$ref": "#/$defs/riskArray"
+            },
+            "legal_risks": {
+              "$ref": "#/$defs/riskArray"
+            },
+            "liquidity_risks": {
+              "$ref": "#/$defs/riskArray"
+            },
+            "contagion_risks": {
+              "$ref": "#/$defs/riskArray"
+            }
+          }
+        }
+      }
+    },
+    "risk_parameters": {
+      "type": "object",
+      "required": [
+        "retained_reserve",
+        "target_interest_rate",
+        "global_minting_limit",
+        "liquidation_price",
+        "maturity",
+        "auction_duration",
+        "minimum_collateral"
+      ],
+      "properties": {
+        "retained_reserve": {
+          "type": ["number", "null"]
+        },
+        "target_interest_rate": {
+          "type": ["number", "null"]
+        },
+        "global_minting_limit": {
+          "type": ["number", "null"]
+        },
+        "liquidation_price": {
+          "type": ["number", "null"]
+        },
+        "maturity": {
+          "type": ["number", "null"]
+        },
+        "auction_duration": {
+          "type": ["number", "null"]
+        },
+        "minimum_collateral": {
+          "type": ["number", "null"]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "riskArray": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "probability",
+          "severity",
+          "compensation"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "probability": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string"
+          },
+          "compensation": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
