@@ -107,7 +107,9 @@ Public information is strong as there are several highly liquid secondary market
 
 ## Market Risk
 
-MDD 48h: 16.24%
+99%-VaR, 48h close-to-close: 8.11%
+
+Maximum Drawdown, 48h close-to-close: 16.68%: 16.24%
 
 The Maximum Drawdown over 48 hours over the last 2 years of trading data from Yahoo, measured close-to-close, was 16.24%.
 
