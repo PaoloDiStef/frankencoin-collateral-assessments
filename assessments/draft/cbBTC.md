@@ -72,7 +72,7 @@
     "target_interest_rate": 0.005,
     "global_minting_limit": null,
     "liquidation_price": 45000,
-    "maturity": 46720,
+    "maturity": null,
     "auction_duration": 24,
     "minimum_collateral": 0.10
   }
