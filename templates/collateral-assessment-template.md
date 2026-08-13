@@ -5,7 +5,7 @@
   "contract_address": "",
   "assessment_date": "",
   "author": "Paolo Di Stefano",
-    "links": {
+  "links": {
     "etherscan": "",
     "coingecko": "",
     "website": "",
@@ -81,96 +81,114 @@
 
 # Collateral Risk Assessment: [Asset Name]
 
-## Important Links
-
-Etherscan:
-
-Coingecko:
-
-Website:
-
-Dashboard:
-
-...
-
 ## Summary
 
-Short conclusion on whether the asset is a credible collateral candidate and under which safeguards.
+[Asset] is a [short classification] collateral candidate.
+
+The main residual risks are [main risk 1], [main risk 2], and [main risk 3].
 
 ## Introduction
 
-Explain the asset, issuer, wrapper, chain, and economic exposure.
+[Asset] is [short explanation of the asset].
+
+It is designed to [economic purpose / wrapper function / protocol function]. The relevant collateral exposure is [underlying asset or claim], while the main additional risks come from [issuer / wrapper / protocol / liquidity / legal structure].
 
 ## Free Float/Liquidity
 
-...
+Classification: [Strong / Sufficient / Insufficient]
 
-Classification:
+[Short paragraph on trading venues, secondary-market liquidity, DEX/CEX depth, redemption availability, and whether liquidation appears feasible.]
 
 ## Public Information
 
-...
+Classification: [Strong / Sufficient / Insufficient]
 
-Classification:
+[Short paragraph on quality of public data, documentation, contract visibility, market data, issuer transparency, dashboards, proof-of-reserves, audits, or reporting.]
 
 ## Market Risk
 
-If normal distributed: 99%-VaR over last 2 years
-If fat tails: MDD over last 2 years
+MDD 48h / 99%-VaR 48h: [x]%
+
+[Short paragraph on the relevant market-risk metric and data source.]
+
+This means a retained reserve of [x]% is [sufficient / appropriate / conservative] to cover ordinary market volatility and account for the challenger reward during a liquidation.
 
 ## Tail Risks
 
-### Counterparty Risk:
+### Counterparty Risk: [Risk Name]
 
-Description:
+Description: [Short description of counterparty, issuer, custodian, redemption, or operational dependency.]
 
-Probability:
+Probability: [Negligible / Very Low / Low / Medium / High / n/a]
 
-Severity:
+Severity: [Moderate / Severe / Critical / n/a]
 
-Compensation:
+Compensation: [x% / n/a]
 
-### Smart Contract Risk:
+[Short rationale.]
 
-Description:
+### Smart Contract Risk: [Risk Name]
 
-Probability:
+Description: [Short description of contract, wrapper, bridge, vault, or protocol-level technical risk.]
 
-Severity:
+Probability: [Negligible / Very Low / Low / Medium / High / n/a]
 
-Compensation:
+Severity: [Moderate / Severe / Critical / n/a]
 
+Compensation: [x% / n/a]
 
-### Governance Risk:
+[Short rationale.]
 
-Description:
+### Governance Risk: [Risk Name]
 
-Probability:
+Description: [Short description of admin controls, DAO governance, parameter changes, freezing rights, upgradeability, or multisig dependency.]
 
-Severity:
+Probability: [Negligible / Very Low / Low / Medium / High / n/a]
 
-Compensation:
+Severity: [Moderate / Severe / Critical / n/a]
 
-### Legal Risk:
+Compensation: [x% / n/a]
 
-Description:
+[Short rationale.]
 
-Probability:
+### Legal Risk: [Risk Name]
 
-Severity:
+Description: [Short description of legal enforceability, sanctions, transfer restrictions, redemption eligibility, securities risk, or regulatory dependency.]
 
-Compensation:
+Probability: [Negligible / Very Low / Low / Medium / High / n/a]
 
-### Liquidity Risk:
+Severity: [Moderate / Severe / Critical / n/a]
 
-Description:
+Compensation: [x% / n/a]
 
-Probability:
+[Short rationale.]
 
-Severity:
+### Liquidity Risk: [Risk Name]
 
-Compensation:
+Description: [Short description of secondary-market liquidity, redemption risk, liquidation depth, auction feasibility, or market-hours mismatch.]
+
+Probability: [Negligible / Very Low / Low / Medium / High / n/a]
+
+Severity: [Moderate / Severe / Critical / n/a]
+
+Compensation: [x% / n/a]
+
+[Short rationale.]
+
+### Contagion Risk: [Risk Name]
+
+Description: [Short description of protocol contagion, systemic market stress, correlated liquidation risk, or ecosystem dependency.]
+
+Probability: [Negligible / Very Low / Low / Medium / High / n/a]
+
+Severity: [Moderate / Severe / Critical / n/a]
+
+Compensation: [x% / n/a]
+
+[Short rationale.]
 
 ## Conclusion
 
-Explain why the proposed parameters are appropriate.
+[Asset] is a [strong / credible / acceptable / higher-risk] collateral candidate for Frankencoin.
+
+The proposed retained reserve of [x]% is appropriate relative to the observed market-risk metric of [x]%. The remaining risk premium is mainly driven by [main tail risks]. 
