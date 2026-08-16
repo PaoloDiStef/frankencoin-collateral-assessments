@@ -70,9 +70,9 @@
   "risk_parameters": {
     "retained_reserve": 0.25,
     "target_interest_rate": 0.0125,
-    "global_minting_limit": 5000000,
-    "liquidation_price": null,
-    "maturity": 46362,
+    "global_minting_limit": null,
+    "liquidation_price": 1162,
+    "maturity": null,
     "auction_duration": 24,
     "minimum_collateral": null
   }
