@@ -71,10 +71,10 @@
     "retained_reserve": 0.10,
     "target_interest_rate": 0.0125,
     "global_minting_limit": null,
-    "liquidation_price": null,
+    "liquidation_price": 2500,
     "maturity": null,
     "auction_duration": 24,
-    "minimum_collateral": null
+    "minimum_collateral": 2
   }
 }
 ---
