@@ -119,7 +119,7 @@ The 10% reserve reflects gold's lower ordinary volatility compared with crypto-n
 
 ## Tail Risks
 
-### Counterparty Risk: Tether Gold issuer and custody structure
+### Counterparty Risk: Tether
 
 Description: XAUt depends on the Tether Gold issuer, the custody of allocated gold, and the operational process linking the token to physical gold ownership.
 
