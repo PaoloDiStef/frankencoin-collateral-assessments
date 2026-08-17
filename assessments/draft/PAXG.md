@@ -15,7 +15,7 @@
   "risk_scores": {
     "public_information": "Strong",
     "free_float": "Strong",
-    "market_risk": "4.72%",
+    "market_risk": "5.08%",
     "tail_risks": {
       "counterparty_risks": [
         {
@@ -109,9 +109,9 @@ Public information is strong. PAXG has extensive public market data, meaning pot
 
 ## Market Risk
 
-99%-VaR, 48h close-to-close: 4.72%
+99%-VaR, 48h close-to-close: 5.08%
 
-Maximum Drawdown, 48h close-to-close: 11.66%
+Maximum Drawdown, 48h close-to-close: 11.58%
 
 The 99% 48h close-to-close VaR in the dataset is 4.72%, while the maximum 48h close-to-close drawdown is 11.66%. The current retained reserve is 10%, which gives a material buffer above the 99% VaR while also accounting for the challenger reward.
 
